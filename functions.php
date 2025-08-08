@@ -1,4 +1,4 @@
-  <?php
+<?php
     if(isset($_GET["length"])) {
         $length = $_GET['length'];
     function generate_password($length){
@@ -12,7 +12,7 @@
          return $password;
     }
     $password = generate_password($length);
-     echo "La tua password è: " . $password;
+     echo "<h5>" . "La tua password è: " . "<p class='text-primary border border-primary mt-2 p-2 col-3'>$password </p>" . "</h5>";
     } else{
         echo "setta la lunghezza";
     }
