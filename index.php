@@ -1,3 +1,13 @@
+<?php
+require_once './functions.php';
+if($password !== ""){
+    session_start();
+    $_SESSION['password'] = $password;
+    header('Location: ./result.php');
+}else{
+        echo "Non dimenticare di settare la lunghezza";
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +23,9 @@
 <label for="length" class="input-group-sm">Lunghezza password:
     <input name="length" id="length" type="number" min="5" max="20" placeholder="min. 5"  class="form-control">
 </label>
-<button type="submit" class="btn btn-secondary">Invia</button>
+<button type="submit" class="btn btn-secondary">Genera</button>
     </form>
-<?php
-require_once './functions.php';
-?>
+
 
     </div>
 
