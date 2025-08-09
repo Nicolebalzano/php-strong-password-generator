@@ -15,7 +15,7 @@ $password = $_SESSION['password'];
 <body class="bg-dark text-white">
     <div class="container">
          <h1>La tua password <?php echo strlen($password)?> di caratteri è stata generata</h1>
-    <?php echo "<h3>" . "La tua password è: " . "<p class='text-primary border border-primary mt-2 p-2 col-3'>$password </p>" . "</h3>";
+    <?php echo "<h3>" . "La tua password è: " . "<p class='text-primary border-bottom border-primary mt-2 p-2 col-3'>$password </p>" . "</h3>";
     ?>
     <a href="./index.php" class="btn btn-secondary">torna indietro</a>
     </div>
